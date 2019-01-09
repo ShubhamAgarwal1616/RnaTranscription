@@ -22,6 +22,12 @@ describe RnaTranscription do
       end
     end
 
+    context "rna_complement_of_thymine_is_adenine" do
+      it "returns A" do
+        expect(RnaTranscription.complement_of_dna("T")).to eql("A")
+      end
+    end
+
   end
 
 end

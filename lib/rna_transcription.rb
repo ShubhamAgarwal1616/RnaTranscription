@@ -12,6 +12,8 @@ class RnaTranscription
           str2 = str2 + 'G'
         elsif str[i]=='G'
           str2 = str2 + 'C'
+        elsif str[i]=='T'
+          str2 = str2 + 'A'
         end
         i=i+1
       end
