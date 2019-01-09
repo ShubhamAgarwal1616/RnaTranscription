@@ -34,6 +34,12 @@ describe RnaTranscription do
       end
     end
 
+    context "rna_complement" do
+      it "returns complement" do
+        expect(RnaTranscription.complement_of_dna("ACGTGGTCTTAA")).to eql("UGCACCAGAAUU")
+      end
+    end
+
   end
 
 end
