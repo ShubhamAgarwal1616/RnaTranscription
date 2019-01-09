@@ -10,6 +10,8 @@ class RnaTranscription
       while i<l do
         if str[i]=='C'
           str2 = str2 + 'G'
+        elsif str[i]=='G'
+          str2 = str2 + 'C'
         end
         i=i+1
       end
