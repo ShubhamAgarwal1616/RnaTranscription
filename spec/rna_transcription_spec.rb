@@ -28,6 +28,12 @@ describe RnaTranscription do
       end
     end
 
+    context "rna_complement_of_adenine_is_uracil" do
+      it "returns U" do
+        expect(RnaTranscription.complement_of_dna("A")).to eql("U")
+      end
+    end
+
   end
 
 end
