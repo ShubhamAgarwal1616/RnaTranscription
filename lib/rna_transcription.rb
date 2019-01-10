@@ -23,5 +23,4 @@ class RnaTranscription
     return str2
   end
   # End of function complement of dna from sa 007
-  # End of function by ra-rna-007
 end
