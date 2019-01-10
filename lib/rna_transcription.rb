@@ -22,5 +22,5 @@ class RnaTranscription
     end
     return str2
   end
-
+#End of function complement of dna from sa 007
 end
