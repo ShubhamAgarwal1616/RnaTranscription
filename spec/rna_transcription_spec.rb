@@ -2,7 +2,7 @@ require "rna_transcription"
 
 describe RnaTranscription do
 
-  describe ".complement_of_dna" do
+  describe ".complement of dna" do
 
     context "empty rna sequence" do
       it "returns empty string" do
@@ -10,31 +10,31 @@ describe RnaTranscription do
       end
     end
 
-    context "rna_complement_of_cytosine_is_guanine" do
+    context "rna complement of cytosine is guanine" do
       it "returns G" do
         expect(RnaTranscription.complement_of_dna("C")).to eql("G")
       end
     end
 
-    context "rna_complement_of_guanine_is_cytosine" do
+    context "rna complement of guanine is cytosine" do
       it "returns C" do
         expect(RnaTranscription.complement_of_dna("G")).to eql("C")
       end
     end
 
-    context "rna_complement_of_thymine_is_adenine" do
+    context "rna complement of thymine is adenine" do
       it "returns A" do
         expect(RnaTranscription.complement_of_dna("T")).to eql("A")
       end
     end
 
-    context "rna_complement_of_adenine_is_uracil" do
+    context "rna complement  of adenine is  uracil" do
       it "returns U" do
         expect(RnaTranscription.complement_of_dna("A")).to eql("U")
       end
     end
 
-    context "rna_complement" do
+    context "rna  complement of ACGTGGTCTTAA is UGCACCAGAAUU" do
       it "returns complement" do
         expect(RnaTranscription.complement_of_dna("ACGTGGTCTTAA")).to eql("UGCACCAGAAUU")
       end
