@@ -1,5 +1,6 @@
 class RnaTranscription
 
+  #function to implement complement of dna
   def self.complement_of_dna(str)
     l = str.length
     str2 = ""
